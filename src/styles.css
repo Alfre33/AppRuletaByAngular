@@ -1,1 +1,90 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1b1b1b;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top:20px;
+    padding:50px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container button {
+    border: none;
+    outline: none;
+    padding: 15px 100px;
+    background: #2287ed;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background: #2889ea;
+}
+
+.button-container button:active {
+    background: #1781ec
+}
+p{
+    color: #fff;
+    font-size:15px;
+    font-weight: bold;
+}
+html,
+body,
+main {
+    height: 100%;
+}
+
+body main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+main .roulette-container {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .roulette-container #selector {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    display: inline-block;
+    width: 0%;
+    height: 0%;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid #f2f2f2;
+    z-index: 1;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.button-container {
+    margin-top: 50px;
+}
+
+.button-container button#reset {
+    display: none;
+}
